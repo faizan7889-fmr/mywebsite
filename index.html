@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Skill to Market – Jammu</title>
+<style>
+:root{--bg:#fffaf3;--card:#fff;--ink:#1f2a24;--muted:#5d6a63;--brand:#1f7a4d;--brand2:#e8a317;--line:#e7e0d2;--soft:#f3ede0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121815;--card:#1a231e;--ink:#eef3ef;--muted:#a3b0a8;--brand:#3fb97c;--brand2:#f0b83a;--line:#2b3830;--soft:#202b25}}
+:root[data-theme="dark"]{--bg:#121815;--card:#1a231e;--ink:#eef3ef;--muted:#a3b0a8;--brand:#3fb97c;--brand2:#f0b83a;--line:#2b3830;--soft:#202b25}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.logo{font-weight:800;color:var(--brand);text-decoration:none;font-size:18px}
+nav a.l{color:var(--ink);text-decoration:none;margin-left:16px;font-size:14px}
+@media(max-width:620px){nav a.l.h{display:none}}
+.btn{display:inline-block;background:var(--brand);color:#fff;border:0;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;cursor:pointer;font-size:15px}
+.btn.o{background:transparent;color:var(--brand);border:2px solid var(--brand)}
+.hero{padding:56px 0 40px}
+.tag{display:inline-block;background:var(--soft);color:var(--brand);padding:4px 12px;border-radius:999px;font-size:13px;font-weight:700}
+h1{font-size:clamp(30px,6vw,52px);line-height:1.15;margin:14px 0}
+h1 span{color:var(--brand)}
+.sub{color:var(--muted);font-size:18px;max-width:620px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+section{padding:44px 0}
+h2{font-size:28px;margin:0 0 6px}
+.lead{color:var(--muted);margin:0 0 24px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.card h3{margin:8px 0 4px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.ic{font-size:28px}
+.num{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--brand2);color:#222;font-weight:800;align-items:center;justify-content:center}
+.stats .card{text-align:center}
+.stats b{font-size:34px;color:var(--brand);display:block}
+.alt{background:var(--soft)}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{background:var(--card);border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:14px}
+form{display:grid;gap:12px}
+label{font-size:14px;font-weight:600;display:grid;gap:4px}
+input,select,textarea{font:inherit;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+.tabs{display:flex;gap:8px;margin-bottom:16px}
+.tab{flex:1;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-weight:700;cursor:pointer;font-size:15px}
+.tab.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.ok{display:none;background:var(--soft);border:1px solid var(--brand);padding:14px;border-radius:12px;margin-top:12px;font-weight:600}
+footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px;text-align:center}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="#top">🧵 Skill to Market</a>
+  <div><a class="l h" href="#how">How it works</a><a class="l h" href="#why">Why us</a><a class="l h" href="#partners">Partners</a><a class="l" href="#join">Join</a></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <span class="tag">📍 Jammu · 6-month pilot</span>
+  <h1>Your skill deserves a <span>real market</span>.</h1>
+  <p class="sub">Skill to Market connects skilled youth of Jammu — tailors, artisans, makers — directly with buyers, schools, shops and programs. Free to join. No middlemen. No hidden bills.</p>
+  <div class="cta"><a class="btn" href="#join">Join as Skilled Youth</a><a class="btn o" href="#join" onclick="setTab('buyer')">I want to place an order</a></div>
+</div></header>
+
+<section class="alt" id="problem"><div class="wrap">
+  <h2>The gap we are solving</h2>
+  <p class="lead">Jammu has talent. What it lacks is a trusted bridge to buyers.</p>
+  <div class="grid">
+    <div class="card"><div class="ic">🪡</div><h3>Skills without income</h3><p>Many youth, especially women in rural areas, are skilled in tailoring and crafts but don't know how to turn it into earning.</p></div>
+    <div class="card"><div class="ic">🔍</div><h3>No access to buyers</h3><p>Local orders from schools, shops and programs exist, but there's no easy way to connect.</p></div>
+    <div class="card"><div class="ic">⚠️</div><h3>Platforms don't fit</h3><p>Existing platforms need GST bills, charge to open accounts and lack trust for first-time sellers.</p></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <h2>How it works</h2>
+  <p class="lead">Four simple steps from skill to order.</p>
+  <div class="grid">
+    <div class="card"><span class="num">1</span><h3>Create free profile</h3><p>Add your skill, a few photos and your area. No fee.</p></div>
+    <div class="card"><span class="num">2</span><h3>Get verified</h3><p>Local partners (Youth Clubs, ITIs, Panchayats) vouch for you — building trust.</p></div>
+    <div class="card"><span class="num">3</span><h3>Receive orders</h3><p>Buyers browse and place orders for bags, uniforms, gifts and more.</p></div>
+    <div class="card"><span class="num">4</span><h3>Earn &amp; grow</h3><p>Deliver, get paid, and build your reputation with reviews.</p></div>
+  </div>
+</div></section>
+
+<section class="alt" id="why"><div class="wrap">
+  <h2>Why Skill to Market</h2>
+  <div class="grid" style="margin-top:20px">
+    <div class="card"><div class="ic">🆓</div><h3>Free account</h3><p>Zero cost to open and list your skills.</p></div>
+    <div class="card"><div class="ic">🤝</div><h3>Trust built-in</h3><p>Community-verified sellers, clear order tracking.</p></div>
+    <div class="card"><div class="ic">👩‍🦱</div><h3>Rural &amp; women first</h3><p>Designed for those the big platforms leave out.</p></div>
+    <div class="card"><div class="ic">📱</div><h3>Simple &amp; mobile</h3><p>Works on any phone. App coming later.</p></div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills on the platform</h2>
+  <p class="lead">Starting with these, growing with demand.</p>
+  <div class="pills">
+    <span class="pill">🧵 Tailoring</span><span class="pill">👜 Bags</span><span class="pill">🎁 Gift items</span><span class="pill">🧶 Embroidery &amp; knitting</span><span class="pill">🎨 Handicrafts</span><span class="pill">🪑 Carpentry</span><span class="pill">⚡ ITI trades</span><span class="pill">🍪 Home food</span>
+  </div>
+</div></section>
+
+<section class="alt" id="impact"><div class="wrap">
+  <h2>6-month pilot targets</h2>
+  <p class="lead">What we will measure and share openly.</p>
+  <div class="grid stats">
+    <div class="card"><b>100+</b>Skilled youth onboarded</div>
+    <div class="card"><b>Orders</b>Facilitated through the platform</div>
+    <div class="card"><b>Income</b>Opportunities created</div>
+    <div class="card"><b>Active</b>Users tracked via logins</div>
+  </div>
+</div></section>
+
+<section id="partners"><div class="wrap">
+  <h2>Our partners</h2>
+  <p class="lead">Rooted in local institutions of Jammu.</p>
+  <div class="pills">
+    <span class="pill">Youth Clubs</span><span class="pill">Panchayats</span><span class="pill">Self Help Groups</span><span class="pill">ITIs</span><span class="pill">Schools</span><span class="pill">Local Entrepreneurs</span>
+  </div>
+</div></section>
+
+<section class="alt" id="join"><div class="wrap" style="max-width:560px">
+  <h2>Join the pilot</h2>
+  <p class="lead">Takes under 2 minutes.</p>
+  <div class="tabs">
+    <button class="tab on" id="t-youth" type="button" onclick="setTab('youth')">I'm skilled youth</button>
+    <button class="tab" id="t-buyer" type="button" onclick="setTab('buyer')">I'm a buyer</button>
+  </div>
+  <form id="f-youth" onsubmit="return send(event,'youth')">
+    <label>Full name<input name="name" required></label>
+    <label>Phone / WhatsApp<input name="phone" type="tel" required></label>
+    <label>Village / Area in Jammu<input name="area" required></label>
+    <label>Your skill<select name="skill"><option>Tailoring</option><option>Embroidery / Knitting</option><option>Handicrafts</option><option>Bags / Gifts</option><option>ITI trade</option><option>Other</option></select></label>
+    <label>Tell us about your work<textarea name="about" rows="3"></textarea></label>
+    <button class="btn" type="submit">Register for free</button>
+  </form>
+  <form id="f-buyer" style="display:none" onsubmit="return send(event,'buyer')">
+    <label>Name / Organisation<input name="name" required></label>
+    <label>Phone / Email<input name="contact" required></label>
+    <label>Type<select name="type"><option>Individual</option><option>School</option><option>Shop</option><option>Program / NGO</option></select></label>
+    <label>What do you need? (e.g. 100 bags, uniforms)<textarea name="need" rows="3" required></textarea></label>
+    <button class="btn" type="submit">Send requirement</button>
+  </form>
+  <div class="ok" id="ok">✅ Thank you! We will contact you soon.</div>
+</div></section>
+
+<footer><div class="wrap">Skill to Market · A Gandhi Fellowship initiative · Jammu<br>Built by Faizan Rather</div></footer>
+
+<script>
+function setTab(t){
+  document.getElementById('f-youth').style.display=t==='youth'?'grid':'none';
+  document.getElementById('f-buyer').style.display=t==='buyer'?'grid':'none';
+  document.getElementById('t-youth').classList.toggle('on',t==='youth');
+  document.getElementById('t-buyer').classList.toggle('on',t==='buyer');
+  document.getElementById('ok').style.display='none';
+}
+function send(e,kind){
+  e.preventDefault();
+  var data=Object.fromEntries(new FormData(e.target).entries());
+  data.kind=kind;data.time=new Date().toISOString();
+  try{var k='stm_'+kind,a=JSON.parse(localStorage.getItem(k)||'[]');a.push(data);localStorage.setItem(k,JSON.stringify(a));}catch(x){}
+  // TODO: send `data` to Google Sheet / Firebase / Formspree
+  e.target.reset();
+  var ok=document.getElementById('ok');ok.style.display='block';
+  ok.scrollIntoView({behavior:'smooth',block:'center'});
+  return false;
+}
+</script>
+</body>
+</html>
